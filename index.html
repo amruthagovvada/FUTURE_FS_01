@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">PORTFOLIO</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">G.Amrutha</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon open" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links open">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#learning" onclick="toggleMenu()">Learning</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="profile-container">
+            <div class="profile-decor">
+                <div class="shape-circle one"></div>
+                <div class="shape-circle two"></div>
+                <div class="profile-pic-wrapper">
+                    <img src="./assets/whatsapp1.jpg" alt="My Photo" class="profile-pic">
+                </div>
+            </div>
+        </div>
+
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="section__text__h1 gradient-text">Amrutha</h1>
+            <h2 class="section__text__h1 gradient-text">Aspiring Web Developer | Computer Science Student | Passionate about Learning & Building</h2>
+            <p class="section__text__p2"><span class="typed-text">Aspiring Web Developer | Computer Science Student | Passionate about Learning & Building</span><span class="cursor">|</span></p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="social-icon" onclick="window.open('https://www.linkedin.com/in/govvada-amrutha-95a849300/')" />
+                <img src="./assets/github.png" alt="GitHub" class="social-icon" onclick="window.open('https://github.com/')" />
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/aboutme.avif" alt="About Image" class="about-pic" />
+            </div>
+            <div class="about-details">
+                <h1 class="title">About Me</h1>
+                <p>I’m Amrutha,and i'm a passionate and curious learner currently pursuing my B.Tech in Computer Science. I’m building a strong foundation in web development and enjoy turning creative ideas into clean, interactive websites. While I’m still gaining experience, I’m driven by a strong desire to learn, grow, and collaborate on meaningful projects.</p>
+                <p>💡 While I don’t have professional experience yet, I spend my time working on personal projects that push me to learn and improve. I believe in learning by doing, and I’m always excited to explore new tools and technologies.</p>
+                <p>🤝 I’m open to collaboration, internships, and connecting with other learners and developers. If you have a project or idea in mind, I’d love to hear from you!</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section id="experience" class="experience-section">
+        <h1 class="title">My Learning Journey</h1>
+        <p>Student | Web Enthusiast | Eager to Learn & Build</p>
+        <div class="experience-container">
+            <div class="experience-category">
+                <h2>Fresher</h2>
+                <ul>
+                    <li>I may be new to the field, but I'm passionate about learning and building. I'm always open to collaborating on exciting projects, and I'm ready to bring my dedication, curiosity, and creativity to the table.</li>
+                </ul>
+            </div>
+            <div class="experience-category">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <strong>Bachelor of Technology in Computer Science</strong><br>
+                        GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING | 2025 – Present<br>
+                        Currently in 3rd year, learning Web Development<br>
+                        Actively building personal projects and developing strong technical skills.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section id="projects" class="projects-section">
+        <h1 class="title">My Projects</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <h2>Personal Portfolio Website</h2>
+                <p>A fully responsive and animated portfolio website built using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+            </div>
+            <div class="project-card">
+                <h2>Helmeta-x</h2>
+                <p>An AI integrated IOT smart helmet for enhanced construction safety</p>
+                <p>I have built a website regarding the details about this </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider" />
+
+    <section id="contact" class="contact-section">
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-container">
+            <p>Have a question, project, or just want to say hi? I'd love to hear from you!</p>
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-links">
+                <p><strong>Email:</strong> amruthagovvada@gmail.com</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/govvada-amrutha-95a849300/" target="_blank">Visit Profile</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
